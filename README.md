@@ -33,6 +33,8 @@ To initialize a raw Ubuntu/EC2 environment with all prerequisites, run:
 ```
 consensus-benchmark-lab/
 ├── analysis/               # STABL sensitivity metric logic and plotting (figures.py, multi_system_radar.py)
+├── aws-results/
+│   ├── awd-results/        # Running results for AWS EC2 Environment
 ├── infra/                  # Docker Compose files and Dockerfiles for etcd, ZooKeeper, Consul
 ├── scripts/                # Automated experiment runner scripts
 │   ├── cluster/            # Etcd cluster control (up, down, health)
