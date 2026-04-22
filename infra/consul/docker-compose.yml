@@ -1,0 +1,62 @@
+services:
+  consul1:
+    image: local/consul-lab:1.18
+    container_name: consul1
+    command:
+      - consul
+      - agent
+      - -server
+      - -data-dir=/consul/data
+      - -bootstrap-expect=3
+      - -node=consul1
+      - -client=0.0.0.0
+      - -bind=0.0.0.0
+      - -retry-join=consul2
+      - -retry-join=consul3
+      - -ui
+    ports:
+      - "18501:8500"
+    cap_add:
+      - NET_ADMIN
+
+  consul2:
+    image: local/consul-lab:1.18
+    container_name: consul2
+    command:
+      - consul
+      - agent
+      - -server
+      - -data-dir=/consul/data
+      - -bootstrap-expect=3
+      - -node=consul2
+      - -client=0.0.0.0
+      - -bind=0.0.0.0
+      - -retry-join=consul1
+      - -retry-join=consul3
+    ports:
+      - "18502:8500"
+    cap_add:
+      - NET_ADMIN
+
+  consul3:
+    image: local/consul-lab:1.18
+    container_name: consul3
+    command:
+      - consul
+      - agent
+      - -server
+      - -data-dir=/consul/data
+      - -bootstrap-expect=3
+      - -node=consul3
+      - -client=0.0.0.0
+      - -bind=0.0.0.0
+      - -retry-join=consul1
+      - -retry-join=consul2
+    ports:
+      - "18503:8500"
+    cap_add:
+      - NET_ADMIN
+
+networks:
+  default:
+    name: consul-lab-net

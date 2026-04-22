@@ -1,0 +1,70 @@
+services:
+  etcd1:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: local/etcd-lab:v3.5.14
+    container_name: etcd1
+    command:
+      - /usr/local/bin/etcd
+      - --name=etcd1
+      - --data-dir=/etcd-data
+      - --initial-advertise-peer-urls=http://etcd1:2380
+      - --listen-peer-urls=http://0.0.0.0:2380
+      - --advertise-client-urls=http://etcd1:2379
+      - --listen-client-urls=http://0.0.0.0:2379
+      - --initial-cluster=etcd1=http://etcd1:2380,etcd2=http://etcd2:2380,etcd3=http://etcd3:2380
+      - --initial-cluster-state=new
+      - --initial-cluster-token=etcd-local-cluster
+    ports:
+      - "23791:2379"
+    volumes:
+      - ./data/etcd1:/etcd-data
+    cap_add:
+      - NET_ADMIN
+
+  etcd2:
+    image: local/etcd-lab:v3.5.14
+    container_name: etcd2
+    command:
+      - /usr/local/bin/etcd
+      - --name=etcd2
+      - --data-dir=/etcd-data
+      - --initial-advertise-peer-urls=http://etcd2:2380
+      - --listen-peer-urls=http://0.0.0.0:2380
+      - --advertise-client-urls=http://etcd2:2379
+      - --listen-client-urls=http://0.0.0.0:2379
+      - --initial-cluster=etcd1=http://etcd1:2380,etcd2=http://etcd2:2380,etcd3=http://etcd3:2380
+      - --initial-cluster-state=new
+      - --initial-cluster-token=etcd-local-cluster
+    ports:
+      - "23792:2379"
+    volumes:
+      - ./data/etcd2:/etcd-data
+    cap_add:
+      - NET_ADMIN
+
+  etcd3:
+    image: local/etcd-lab:v3.5.14
+    container_name: etcd3
+    command:
+      - /usr/local/bin/etcd
+      - --name=etcd3
+      - --data-dir=/etcd-data
+      - --initial-advertise-peer-urls=http://etcd3:2380
+      - --listen-peer-urls=http://0.0.0.0:2380
+      - --advertise-client-urls=http://etcd3:2379
+      - --listen-client-urls=http://0.0.0.0:2379
+      - --initial-cluster=etcd1=http://etcd1:2380,etcd2=http://etcd2:2380,etcd3=http://etcd3:2380
+      - --initial-cluster-state=new
+      - --initial-cluster-token=etcd-local-cluster
+    ports:
+      - "23793:2379"
+    volumes:
+      - ./data/etcd3:/etcd-data
+    cap_add:
+      - NET_ADMIN
+
+networks:
+  default:
+    name: etcd-lab-net

@@ -1,0 +1,40 @@
+services:
+  zk1:
+    image: local/zookeeper-lab:3.9
+    container_name: zk1
+    environment:
+      ZOO_MY_ID: "1"
+      ZOO_SERVERS: "server.1=zk1:2888:3888;2181 server.2=zk2:2888:3888;2181 server.3=zk3:2888:3888;2181"
+      ZOO_4LW_COMMANDS_WHITELIST: ruok,mntr,srvr,conf
+    ports:
+      - "22181:2181"
+    cap_add:
+      - NET_ADMIN
+
+  zk2:
+    image: local/zookeeper-lab:3.9
+    container_name: zk2
+    environment:
+      ZOO_MY_ID: "2"
+      ZOO_SERVERS: "server.1=zk1:2888:3888;2181 server.2=zk2:2888:3888;2181 server.3=zk3:2888:3888;2181"
+      ZOO_4LW_COMMANDS_WHITELIST: ruok,mntr,srvr,conf
+    ports:
+      - "22182:2181"
+    cap_add:
+      - NET_ADMIN
+
+  zk3:
+    image: local/zookeeper-lab:3.9
+    container_name: zk3
+    environment:
+      ZOO_MY_ID: "3"
+      ZOO_SERVERS: "server.1=zk1:2888:3888;2181 server.2=zk2:2888:3888;2181 server.3=zk3:2888:3888;2181"
+      ZOO_4LW_COMMANDS_WHITELIST: ruok,mntr,srvr,conf
+    ports:
+      - "22183:2181"
+    cap_add:
+      - NET_ADMIN
+
+networks:
+  default:
+    name: zk-lab-net

@@ -1,0 +1,4 @@
+matplotlib==3.8.4
+numpy==1.26.4
+kazoo==2.10.0
+python-consul2==0.1.5

@@ -1,0 +1,88 @@
+{
+  "summary": {
+    "total_ops": 10,
+    "success_ops": 10,
+    "failed_ops": 0,
+    "failure_rate": 0.0,
+    "throughput_ops_per_sec": 44.414974614661446,
+    "p50_ms": 22.09708100053831,
+    "p95_ms": 26.631065999572456,
+    "p99_ms": 27.234569999309315,
+    "mode": "80_write_20_read",
+    "redundant_copies": 1
+  },
+  "latencies_ms": [
+    25.534937001793878,
+    25.709045999974478,
+    24.08034700056305,
+    27.38544599924353,
+    21.749565999925835,
+    21.92646399998921,
+    12.713514002825832,
+    22.193266999238404,
+    21.798811001644935,
+    22.000895001838217
+  ],
+  "ops_trace": [
+    {
+      "submit_time": 6.338999810395762e-06,
+      "end_time": 0.025541276001604274,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.02554857500217622,
+      "end_time": 0.0512576210021507,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.05126242200276465,
+      "end_time": 0.0753427690033277,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.07534762200157274,
+      "end_time": 0.10273306800081627,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.10273822700037272,
+      "end_time": 0.12448779300029855,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.12449211400235072,
+      "end_time": 0.14641857800233993,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.14642735400047968,
+      "end_time": 0.1591408680033055,
+      "success": true,
+      "op": "read"
+    },
+    {
+      "submit_time": 0.15914492100273492,
+      "end_time": 0.18133818800197332,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.18134252399977413,
+      "end_time": 0.20314133500141907,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.203145815001335,
+      "end_time": 0.2251467100031732,
+      "success": true,
+      "op": "write"
+    }
+  ]
+}
