@@ -3,15 +3,11 @@ import unittest
 from analysis.figures import (
     compute_ecdf_x_limit,
     compute_radar_rmax,
-    fig3_scenarios,
     radar_scenarios,
 )
 
 
 class FiguresConfigTests(unittest.TestCase):
-    def test_fig3_scenarios_match_radar_set(self):
-        self.assertEqual(fig3_scenarios(), radar_scenarios())
-
     def test_radar_scenarios_excludes_byzantine_like(self):
         scenarios = radar_scenarios()
         self.assertNotIn("byzantine_like", scenarios)

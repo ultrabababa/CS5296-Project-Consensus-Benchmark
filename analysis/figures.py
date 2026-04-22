@@ -17,7 +17,6 @@ if str(ROOT_DIR) not in sys.path:
 
 from analysis.figure_data import ecdf_points, load_latencies_from_runs, radar_rows
 from analysis.multi_scenario import load_sensitivity_by_scenario
-from analysis.ops_plot_data import build_ops_series
 from analysis.stabl_metric import area_under_ecdf
 
 
@@ -32,8 +31,6 @@ def radar_scenarios() -> list[str]:
     ]
 
 
-def fig3_scenarios() -> list[str]:
-    return radar_scenarios()
 
 
 def _percentile(values: list[float], p: float) -> float:
@@ -184,40 +181,6 @@ def fig2_radar_multi(scores: dict[str, dict[str, float]], out_png: Path, out_csv
     plt.savefig(out_png, dpi=200)
     plt.close()
 
-def fig3_ops_timeseries(results_root: Path, system: str, out_png: Path, out_csv: Path) -> None:
-    scenarios = fig3_scenarios()
-    series = build_ops_series(results_root=results_root, system=system, scenarios=scenarios)
-
-    out_csv.parent.mkdir(parents=True, exist_ok=True)
-    with out_csv.open("w", newline="", encoding="utf-8") as f:
-        w = csv.writer(f)
-        w.writerow(["scenario", "time_sec", "mean_tps", "std_tps"])
-        for scenario, payload in series.items():
-            times = payload.get("times", [])
-            means = payload.get("mean_tps", [])
-            stds = payload.get("std_tps", [])
-            for t, m, s in zip(times, means, stds):
-                w.writerow([scenario, t, m, s])
-
-    fig, ax = plt.subplots(figsize=(11, 6))
-    for scenario in ["baseline", *scenarios]:
-        payload = series.get(scenario, {"times": [], "mean_tps": []})
-        times = [float(x) for x in payload.get("times", [])]
-        means = [float(y) for y in payload.get("mean_tps", [])]
-        if not times or not means:
-            continue
-        label = scenario.replace("_", " ")
-        ax.plot(times, means, linewidth=1.6, label=label)
-
-    ax.set_title(f"OPS-over-time ({system})")
-    ax.set_xlabel("Time (s)")
-    ax.set_ylabel("Throughput (ops/s)")
-    ax.grid(True, alpha=0.3)
-    ax.legend(loc="upper right", fontsize=8)
-    out_png.parent.mkdir(parents=True, exist_ok=True)
-    plt.tight_layout()
-    plt.savefig(out_png, dpi=220)
-    plt.close()
 
 
 def main() -> int:
@@ -256,15 +219,10 @@ def main() -> int:
     fig2_csv = args.fig_dir / f"{args.system}_fig2_radar.csv"
     fig2_radar(score_table, fig2_png, fig2_csv)
 
-    fig3_png = args.fig_dir / f"{args.system}_fig3_ops_timeseries.png"
-    fig3_csv = args.fig_dir / f"{args.system}_fig3_ops_timeseries.csv"
-    fig3_ops_timeseries(args.results_root, args.system, fig3_png, fig3_csv)
-
     summary = {
         "fig1_sensitivity": sensitivity,
         "fig1_png": str(fig1_png),
         "fig2_png": str(fig2_png),
-        "fig3_png": str(fig3_png),
         "radar_scores": scenario_scores,
     }
     summary_path = args.fig_dir / f"{args.system}_figures_summary.json"
