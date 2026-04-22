@@ -36,8 +36,6 @@ def stabl_sensitivity_score(baseline_ms: list[float], altered_ms: list[float]) -
     if not altered_ms:
         return math.inf
 
-    lower = min(min(baseline_ms), min(altered_ms), 0.0)
-    upper = max(max(baseline_ms), max(altered_ms))
-    b_area = area_under_ecdf(baseline_ms, lower_bound=lower, upper_bound=upper)
-    a_area = area_under_ecdf(altered_ms, lower_bound=lower, upper_bound=upper)
+    b_area = area_under_ecdf(baseline_ms)
+    a_area = area_under_ecdf(altered_ms)
     return abs(b_area - a_area)

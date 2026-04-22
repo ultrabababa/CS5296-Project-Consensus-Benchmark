@@ -1,0 +1,1958 @@
+{
+  "summary": {
+    "total_ops": 300,
+    "success_ops": 140,
+    "failed_ops": 160,
+    "failure_rate": 0.5333333333333333,
+    "throughput_ops_per_sec": 11.635479261604347,
+    "p50_ms": 6.174463499974081,
+    "p95_ms": 12.63165825030227,
+    "p99_ms": 19.277038980262645,
+    "mode": "80_write_20_read",
+    "redundant_copies": 1
+  },
+  "latencies_ms": [
+    13.204266000229836,
+    7.146613999793772,
+    19.619427000179712,
+    9.508597000149166,
+    14.199154999914754,
+    7.0522010000786395,
+    6.193550999796571,
+    10.829343999830598,
+    9.861655000349856,
+    16.173266999885527,
+    21.017738999944413,
+    1.7764710000847117,
+    7.168280000314553,
+    6.898042000102578,
+    6.910310999955982,
+    6.807133999700454,
+    1.6084499998214596,
+    10.557780999988609,
+    9.735568999985844,
+    8.39015700012169,
+    7.74563400000261,
+    1.9673179999699641,
+    5.182360999697266,
+    8.22803599976396,
+    8.636852999643452,
+    11.23635900012232,
+    8.47356399981436,
+    6.563585000094463,
+    6.389818000116065,
+    7.813493999947241,
+    6.159378000120341,
+    1.6821589997562114,
+    7.296196999959648,
+    6.1339130002124875,
+    6.831132000115758,
+    8.347180999862758,
+    4.12508199997319,
+    18.741509000392398,
+    6.6815459999816085,
+    5.759723999744892,
+    6.189548999827821,
+    6.747607999841421,
+    1.7766450000635814,
+    8.764533999965352,
+    5.257095000160916,
+    12.601521000306093,
+    2.173438000227179,
+    11.125490999802423,
+    5.136964000030275,
+    5.483222000293608,
+    5.9769389999928535,
+    5.306057999860059,
+    3.8426220003202616,
+    8.905169999707141,
+    8.597129999998288,
+    10.163489999740705,
+    8.983379000255809,
+    8.477632999984053,
+    14.482402999874466,
+    2.806319999763218,
+    6.020141999670159,
+    7.420423999974446,
+    7.954206000249542,
+    6.310696999662468,
+    1.6684780002833577,
+    6.343796000237489,
+    6.198795999807771,
+    5.125829999997222,
+    7.432162999975844,
+    6.934636000096361,
+    9.66385599986097,
+    4.993182999896817,
+    4.848621000292042,
+    4.628768000202399,
+    7.029643999885593,
+    4.658641999867541,
+    5.868339999778982,
+    4.708487000243622,
+    4.433610999967641,
+    6.544633999965299,
+    5.950572000074317,
+    4.886404999979277,
+    1.4215259998309193,
+    4.9160620001202915,
+    11.264700000083394,
+    10.217504000138433,
+    4.790791999766952,
+    4.634541999621433,
+    5.563750999954209,
+    7.166718000007677,
+    6.511935000162339,
+    5.4763860002822184,
+    1.4006000001245411,
+    5.865484999958426,
+    5.252587000086351,
+    4.72938900020381,
+    5.842690000008588,
+    5.119733000356064,
+    6.918340000083845,
+    5.647963999763306,
+    5.856264000158262,
+    1.2086349997844081,
+    2.3723330000393617,
+    1.4838279998912185,
+    9.187058999941655,
+    5.677445999936026,
+    8.155274000273494,
+    9.435767000013584,
+    1.956886000243685,
+    1.178639000045223,
+    4.890704999979789,
+    4.581915000017034,
+    4.679537999891181,
+    1.1646109996945597,
+    9.257888999854913,
+    8.449687999927846,
+    5.75588100036839,
+    2.670450000096025,
+    1.2754670001413615,
+    4.639421000319999,
+    1.0341679999328335,
+    4.025668000394944,
+    4.912251999940054,
+    1.0006680004153168,
+    4.175857000063843,
+    3.8001549996806716,
+    1.0271790001752379,
+    0.8936949998314958,
+    6.4950900000440015,
+    5.496234000020195,
+    11.978594000083831,
+    8.204460999877483,
+    6.2263170002552215,
+    1.6019180002331268,
+    6.118486999639572,
+    6.635994999669492,
+    9.948551999968913,
+    7.399610999982542,
+    10.22095200005424,
+    5.464720999952988
+  ],
+  "ops_trace": [
+    {
+      "submit_time": 8.912999874155503e-06,
+      "end_time": 0.013213179000103992,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.013223324000136927,
+      "end_time": 0.0203699379999307,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.020378885999889462,
+      "end_time": 0.039998313000069174,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.04000563999989026,
+      "end_time": 0.04951423700003943,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.04952273900016735,
+      "end_time": 0.0637218940000821,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.06373075500005143,
+      "end_time": 0.07078295600013007,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.07079035200013095,
+      "end_time": 0.07698390299992752,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.07699798600015129,
+      "end_time": 0.08782732999998188,
+      "success": true,
+      "op": "read"
+    },
+    {
+      "submit_time": 0.08783885799994096,
+      "end_time": 0.09770051300029081,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.0977144280000175,
+      "end_time": 0.11388769499990303,
+      "success": true,
+      "op": "read"
+    },
+    {
+      "submit_time": 0.12415983100027006,
+      "end_time": 0.14517757000021447,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.14518708600007812,
+      "end_time": 0.14696355700016284,
+      "success": true,
+      "op": "read"
+    },
+    {
+      "submit_time": 0.14697183699991,
+      "end_time": 0.15414011700022456,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.15414853399988715,
+      "end_time": 0.16104657599998973,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.16105245500011733,
+      "end_time": 0.16796276600007332,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.16796854900030667,
+      "end_time": 0.17477568300000712,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.1747836740000821,
+      "end_time": 0.17639212399990356,
+      "success": true,
+      "op": "read"
+    },
+    {
+      "submit_time": 0.1763982960001158,
+      "end_time": 0.18695607700010441,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.18696339799998896,
+      "end_time": 0.1966989669999748,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.19670780500018736,
+      "end_time": 0.20509796200030905,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.2051062760001514,
+      "end_time": 0.21285191000015402,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.21285942100030297,
+      "end_time": 0.21482673900027294,
+      "success": true,
+      "op": "read"
+    },
+    {
+      "submit_time": 0.2148338000001786,
+      "end_time": 0.22001616099987586,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.22002499700010958,
+      "end_time": 0.22825303299987354,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.22826194300023417,
+      "end_time": 0.23689879599987762,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.23690897500000574,
+      "end_time": 0.24814533400012806,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.24815471600004457,
+      "end_time": 0.25662827999985893,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.2566403830001036,
+      "end_time": 0.2632039680001981,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.26321278800014625,
+      "end_time": 0.2696026060002623,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.2696088510001573,
+      "end_time": 0.27742234500010454,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.27742971099996794,
+      "end_time": 0.2835890890000883,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.2835971090003113,
+      "end_time": 0.28527926800006753,
+      "success": true,
+      "op": "read"
+    },
+    {
+      "submit_time": 0.2852877380000791,
+      "end_time": 0.29258393500003876,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.2926138769998943,
+      "end_time": 0.29874779000010676,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.29875660700008666,
+      "end_time": 0.3055877390002024,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.30559719100028815,
+      "end_time": 0.3139443720001509,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.3139626010001848,
+      "end_time": 0.318087683000158,
+      "success": true,
+      "op": "read"
+    },
+    {
+      "submit_time": 0.3180956219998734,
+      "end_time": 0.3368371310002658,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.3368455980003091,
+      "end_time": 0.3435271440002907,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.3435625780002738,
+      "end_time": 0.3493223020000187,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.3493323600000622,
+      "end_time": 0.35552190899989,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.35553073500022947,
+      "end_time": 0.3622783430000709,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.36228721399993447,
+      "end_time": 0.36406385899999805,
+      "success": true,
+      "op": "read"
+    },
+    {
+      "submit_time": 0.3640718320002634,
+      "end_time": 0.37283636600022874,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.3728443840000182,
+      "end_time": 0.3781014790001791,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.3781090279999262,
+      "end_time": 0.3907105490002323,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.3907203869998739,
+      "end_time": 0.39289382500010106,
+      "success": true,
+      "op": "read"
+    },
+    {
+      "submit_time": 0.3929014210002606,
+      "end_time": 0.404026912000063,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.40403680000008535,
+      "end_time": 0.4091737640001156,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.40929581399996096,
+      "end_time": 0.41477903600025456,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.4147897789998751,
+      "end_time": 0.420766717999868,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.42077477800012275,
+      "end_time": 0.4260808359999828,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.4260909869999523,
+      "end_time": 0.42993360900027255,
+      "success": true,
+      "op": "read"
+    },
+    {
+      "submit_time": 0.4299418320001678,
+      "end_time": 0.4388470019998749,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.43885533000002397,
+      "end_time": 0.44745246000002226,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.4474609940002665,
+      "end_time": 0.4576244840000072,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.457634723999945,
+      "end_time": 0.4666181030002008,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.4666280229998847,
+      "end_time": 0.47510565599986876,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.47511492700004965,
+      "end_time": 0.4895973299999241,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.4896117050002431,
+      "end_time": 0.4924180250000063,
+      "success": true,
+      "op": "read"
+    },
+    {
+      "submit_time": 0.49242586900027163,
+      "end_time": 0.4984460109999418,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.4984539609999956,
+      "end_time": 0.5058743849999701,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.5058824210000239,
+      "end_time": 0.5138366270002734,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.5138448010002321,
+      "end_time": 0.5201554979998946,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.5201664559999699,
+      "end_time": 0.5218349340002533,
+      "success": true,
+      "op": "read"
+    },
+    {
+      "submit_time": 0.5218450200000007,
+      "end_time": 0.5281888160002381,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.5281961270002284,
+      "end_time": 0.5343949230000362,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.534401877000164,
+      "end_time": 0.5395277070001612,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.5395527569999103,
+      "end_time": 0.5469849199998862,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.5469944239998767,
+      "end_time": 0.5539290599999731,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.5539372070002173,
+      "end_time": 0.5636010630000783,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.5636118850002276,
+      "end_time": 0.5686050680001244,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.5686111529998925,
+      "end_time": 0.5734597740001846,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.5734679679999317,
+      "end_time": 0.5780967360001341,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.5781035730001349,
+      "end_time": 0.5851332170000205,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.5851397100000213,
+      "end_time": 0.5897983519998888,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.5898061450002388,
+      "end_time": 0.5956744850000177,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.5956861810000191,
+      "end_time": 0.6003946680002628,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.6004021339999781,
+      "end_time": 0.6048357449999457,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.6048423430002003,
+      "end_time": 0.6113869770001656,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.611395383999934,
+      "end_time": 0.6173459560000083,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.6173545850001574,
+      "end_time": 0.6222409900001367,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.622248258000127,
+      "end_time": 0.6236697839999579,
+      "success": true,
+      "op": "read"
+    },
+    {
+      "submit_time": 0.6236759540001913,
+      "end_time": 0.6285920160003116,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.6285997810000481,
+      "end_time": 0.6398644810001315,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.6398768230001224,
+      "end_time": 0.6500943270002608,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.6501025890001983,
+      "end_time": 0.6548933809999653,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.654899719000241,
+      "end_time": 0.6595342609998625,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.6595642679999401,
+      "end_time": 0.6651280189998943,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.6651340910002546,
+      "end_time": 0.6723008090002622,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.6723086980000517,
+      "end_time": 0.678820633000214,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.6788268029999927,
+      "end_time": 0.6843031890002749,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.6843124080000962,
+      "end_time": 0.6857130080002207,
+      "success": true,
+      "op": "read"
+    },
+    {
+      "submit_time": 0.6857234310000422,
+      "end_time": 0.6915889160000006,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.6915970909999487,
+      "end_time": 0.696849678000035,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.6968569099999513,
+      "end_time": 0.7015862990001551,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.7015942400003041,
+      "end_time": 0.7074369300003127,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.7074452709998695,
+      "end_time": 0.7125650040002256,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.7125725999999304,
+      "end_time": 0.7194909400000142,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.7194983510003112,
+      "end_time": 0.7251463150000745,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.725153027000033,
+      "end_time": 0.7310092910001913,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.7310197050001079,
+      "end_time": 0.7322283399998923,
+      "success": true,
+      "op": "read"
+    },
+    {
+      "submit_time": 0.7322371949999251,
+      "end_time": 0.7346095279999645,
+      "success": true,
+      "op": "read"
+    },
+    {
+      "submit_time": 0.7346195850000186,
+      "end_time": 0.7361034129999098,
+      "success": true,
+      "op": "read"
+    },
+    {
+      "submit_time": 0.7361102899999423,
+      "end_time": 0.745297348999884,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.7453039880001597,
+      "end_time": 0.7509814340000958,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.7509879770000225,
+      "end_time": 0.759143251000296,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.7599334760002421,
+      "end_time": 0.7693692430002557,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.7693788169999607,
+      "end_time": 0.7713357030002044,
+      "success": true,
+      "op": "read"
+    },
+    {
+      "submit_time": 0.771348196999952,
+      "end_time": 0.7725268359999973,
+      "success": true,
+      "op": "read"
+    },
+    {
+      "submit_time": 0.7725349229999665,
+      "end_time": 0.7774256279999463,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.7774342910001906,
+      "end_time": 0.7820162060002076,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.7820238340000287,
+      "end_time": 0.7867033719999199,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.7867108240002381,
+      "end_time": 0.7878754349999326,
+      "success": true,
+      "op": "read"
+    },
+    {
+      "submit_time": 0.7878819820002718,
+      "end_time": 0.7971398710001267,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.7971468700002333,
+      "end_time": 0.8055965580001612,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.8056060459998662,
+      "end_time": 0.8113619270002346,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.8113726020001195,
+      "end_time": 0.8140430520002155,
+      "success": true,
+      "op": "read"
+    },
+    {
+      "submit_time": 0.8140713279999545,
+      "end_time": 0.8153467950000959,
+      "success": true,
+      "op": "read"
+    },
+    {
+      "submit_time": 0.8153528799998639,
+      "end_time": 0.8199923010001839,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.8199992899999415,
+      "end_time": 0.8210334579998744,
+      "success": true,
+      "op": "read"
+    },
+    {
+      "submit_time": 0.8210400349998963,
+      "end_time": 0.8250657030002913,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.8250718379999853,
+      "end_time": 0.8299840899999253,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.8299925229998735,
+      "end_time": 0.8309931910002888,
+      "success": true,
+      "op": "read"
+    },
+    {
+      "submit_time": 0.8309989879999193,
+      "end_time": 0.8351748449999832,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.8351811360003012,
+      "end_time": 0.8389812909999819,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.8389898360001098,
+      "end_time": 0.840017015000285,
+      "success": true,
+      "op": "read"
+    },
+    {
+      "submit_time": 0.840024977000212,
+      "end_time": 0.8409186720000434,
+      "success": true,
+      "op": "read"
+    },
+    {
+      "submit_time": 0.8409235770000123,
+      "end_time": 0.8474186670000563,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.8474313770002482,
+      "end_time": 0.8529276110002684,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.853420978000031,
+      "end_time": 0.8653995720001149,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.86540740800001,
+      "end_time": 0.8736118689998875,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.8736226969999734,
+      "end_time": 0.8798490140002286,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.8798592240000289,
+      "end_time": 0.881461142000262,
+      "success": true,
+      "op": "read"
+    },
+    {
+      "submit_time": 0.8814690570002313,
+      "end_time": 0.8875875439998708,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.887597222000295,
+      "end_time": 0.8942332169999645,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.8942423490002511,
+      "end_time": 0.90419090100022,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.9041984330001469,
+      "end_time": 0.9115980440001294,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.9116095809999933,
+      "end_time": 0.9218305330000476,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.9218378640002811,
+      "end_time": 0.9273025850002341,
+      "success": true,
+      "op": "write"
+    },
+    {
+      "submit_time": 0.9273115119999602,
+      "end_time": 1.256063106000056,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 1.2560718009999619,
+      "end_time": 11.957471412999894,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.957480964000297,
+      "end_time": 11.957636238000305,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.957643315000041,
+      "end_time": 11.957675430000108,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.957677930000045,
+      "end_time": 11.957696520999889,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.957698900000196,
+      "end_time": 11.957727006999903,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.957729226000083,
+      "end_time": 11.957740292999915,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.957742134,
+      "end_time": 11.957752061000065,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.957753208000213,
+      "end_time": 11.95776188500031,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.957764592999865,
+      "end_time": 11.957772469000247,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.957778240000152,
+      "end_time": 11.95779256500009,
+      "success": false,
+      "op": "read"
+    },
+    {
+      "submit_time": 11.957794414000091,
+      "end_time": 11.957805102000293,
+      "success": false,
+      "op": "read"
+    },
+    {
+      "submit_time": 11.957806151000113,
+      "end_time": 11.957817048999914,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.957818063000104,
+      "end_time": 11.957825389999925,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.957826491000105,
+      "end_time": 11.957850873000098,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.957851939000193,
+      "end_time": 11.9578594110003,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.95786047599995,
+      "end_time": 11.957871216000058,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.95787258700011,
+      "end_time": 11.95787962300028,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.95788076000008,
+      "end_time": 11.957892493000145,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.95789435000006,
+      "end_time": 11.957901786000093,
+      "success": false,
+      "op": "read"
+    },
+    {
+      "submit_time": 11.957902773000114,
+      "end_time": 11.957909492999988,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.957910383000126,
+      "end_time": 11.957921611000074,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.957922661999874,
+      "end_time": 11.957929726000202,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.957930737999959,
+      "end_time": 11.957937417000267,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.957938345999992,
+      "end_time": 11.957950354999866,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.957953309000004,
+      "end_time": 11.957961593000164,
+      "success": false,
+      "op": "read"
+    },
+    {
+      "submit_time": 11.95796300200027,
+      "end_time": 11.9579700459999,
+      "success": false,
+      "op": "read"
+    },
+    {
+      "submit_time": 11.957970969000144,
+      "end_time": 11.957978181000271,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.957979071999944,
+      "end_time": 11.957985976000145,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.95798903900004,
+      "end_time": 11.957996563000052,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.95799807000003,
+      "end_time": 11.958010337999895,
+      "success": false,
+      "op": "read"
+    },
+    {
+      "submit_time": 11.958011296000223,
+      "end_time": 11.958173370000168,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.958174798000073,
+      "end_time": 11.958184361999884,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.958185800000138,
+      "end_time": 11.958193547000064,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.958194648000244,
+      "end_time": 11.958201988999917,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.958202840000013,
+      "end_time": 11.958209717000045,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.958210600000257,
+      "end_time": 11.95821738099994,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.958218169000247,
+      "end_time": 11.958224844000142,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.958225742000195,
+      "end_time": 11.958232196000154,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.958233053000185,
+      "end_time": 11.958240295999985,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.958241245999943,
+      "end_time": 11.958247564999965,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.958248377000018,
+      "end_time": 11.958254939000199,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.958255920000283,
+      "end_time": 11.958262836999893,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.958265032999861,
+      "end_time": 11.958271993999915,
+      "success": false,
+      "op": "read"
+    },
+    {
+      "submit_time": 11.958273793999979,
+      "end_time": 11.958280493000075,
+      "success": false,
+      "op": "read"
+    },
+    {
+      "submit_time": 11.958281532,
+      "end_time": 11.958288021000044,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.958289284999864,
+      "end_time": 11.958295785000246,
+      "success": false,
+      "op": "read"
+    },
+    {
+      "submit_time": 11.958297391000087,
+      "end_time": 11.958304102000056,
+      "success": false,
+      "op": "read"
+    },
+    {
+      "submit_time": 11.958304992000194,
+      "end_time": 11.958311533000142,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.958313082000132,
+      "end_time": 11.958319548999953,
+      "success": false,
+      "op": "read"
+    },
+    {
+      "submit_time": 11.958320426000228,
+      "end_time": 11.95832684900006,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.95832766500007,
+      "end_time": 11.958334035999997,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.958335186000113,
+      "end_time": 11.958341817000019,
+      "success": false,
+      "op": "read"
+    },
+    {
+      "submit_time": 11.95834290599987,
+      "end_time": 11.95834936600022,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.958350279000115,
+      "end_time": 11.958356568,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.958357318000253,
+      "end_time": 11.958364181999968,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.958364939000148,
+      "end_time": 11.958371609000096,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.95837246300016,
+      "end_time": 11.95837921600014,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.958380442999896,
+      "end_time": 11.958387160000257,
+      "success": false,
+      "op": "read"
+    },
+    {
+      "submit_time": 11.958388000000014,
+      "end_time": 11.958394642000258,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.958395443999962,
+      "end_time": 11.958401852999941,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.958405803000005,
+      "end_time": 11.958412811000017,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.958413592999932,
+      "end_time": 11.958420318000208,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.95842108900024,
+      "end_time": 11.958427769000082,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.958428539000124,
+      "end_time": 11.958435303999977,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.958436041999903,
+      "end_time": 11.958442675000242,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.958443475999957,
+      "end_time": 11.958451204000085,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.958451962000254,
+      "end_time": 11.958461483000065,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.958462257000065,
+      "end_time": 11.958471513999939,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.958472310000161,
+      "end_time": 11.958479269000236,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.958480045000215,
+      "end_time": 11.958487750000131,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.958488519000184,
+      "end_time": 11.958495439000217,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.958496823000132,
+      "end_time": 11.95850416300027,
+      "success": false,
+      "op": "read"
+    },
+    {
+      "submit_time": 11.95850501599989,
+      "end_time": 11.960914455999955,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.960921444000178,
+      "end_time": 11.960940134999873,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.960945717999948,
+      "end_time": 11.96095831599996,
+      "success": false,
+      "op": "read"
+    },
+    {
+      "submit_time": 11.960960628000066,
+      "end_time": 11.96096952500011,
+      "success": false,
+      "op": "read"
+    },
+    {
+      "submit_time": 11.96097144300029,
+      "end_time": 11.960979247000068,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.960986847000186,
+      "end_time": 11.960994566999943,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.96099550200006,
+      "end_time": 11.961002503000145,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961003384999913,
+      "end_time": 11.961011119999966,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961012034000305,
+      "end_time": 11.96101885500002,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961019837000094,
+      "end_time": 11.961026320000201,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961027175000254,
+      "end_time": 11.961033711000255,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961034502000075,
+      "end_time": 11.961040973000308,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961041811000086,
+      "end_time": 11.961048167000172,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961048949000087,
+      "end_time": 11.961055432000194,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961056932000247,
+      "end_time": 11.961063515000205,
+      "success": false,
+      "op": "read"
+    },
+    {
+      "submit_time": 11.961064408000311,
+      "end_time": 11.961071360000005,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961072131000037,
+      "end_time": 11.961078854999869,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961079657000028,
+      "end_time": 11.961086399000123,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961087160000261,
+      "end_time": 11.961093710000114,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.96109492200003,
+      "end_time": 11.961101454000072,
+      "success": false,
+      "op": "read"
+    },
+    {
+      "submit_time": 11.961102889999893,
+      "end_time": 11.961109679999936,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961110487000042,
+      "end_time": 11.961117358000138,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961118233999969,
+      "end_time": 11.961124891000054,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.96112571399999,
+      "end_time": 11.961132239000108,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961133004000203,
+      "end_time": 11.96113999399995,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961140772999897,
+      "end_time": 11.961147419000099,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961148214999866,
+      "end_time": 11.96115510000027,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961156283000037,
+      "end_time": 11.961162983000122,
+      "success": false,
+      "op": "read"
+    },
+    {
+      "submit_time": 11.961163823999868,
+      "end_time": 11.961170437999954,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961171324000134,
+      "end_time": 11.961177844000304,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961178611999912,
+      "end_time": 11.961185185999966,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961185961999945,
+      "end_time": 11.961192471000231,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961193249000189,
+      "end_time": 11.961200135000126,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961200940000253,
+      "end_time": 11.961207512999863,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961208961000011,
+      "end_time": 11.961216657000023,
+      "success": false,
+      "op": "read"
+    },
+    {
+      "submit_time": 11.961217616999875,
+      "end_time": 11.961224263000076,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.96122504699997,
+      "end_time": 11.961231618000056,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961234737000268,
+      "end_time": 11.961241790000258,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961242633999973,
+      "end_time": 11.961249884000154,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961250737000228,
+      "end_time": 11.96125757000027,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961258438000186,
+      "end_time": 11.96126539800025,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961266710000018,
+      "end_time": 11.961273874000199,
+      "success": false,
+      "op": "read"
+    },
+    {
+      "submit_time": 11.961275154000305,
+      "end_time": 11.961368010000115,
+      "success": false,
+      "op": "read"
+    },
+    {
+      "submit_time": 11.96136907500022,
+      "end_time": 11.961376760999883,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961378303999936,
+      "end_time": 11.961385675000201,
+      "success": false,
+      "op": "read"
+    },
+    {
+      "submit_time": 11.961386998000307,
+      "end_time": 11.961393904000033,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961394887000097,
+      "end_time": 11.961401642000055,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961402528000235,
+      "end_time": 11.961409132999961,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961410384999908,
+      "end_time": 11.9614170750001,
+      "success": false,
+      "op": "read"
+    },
+    {
+      "submit_time": 11.961417966000226,
+      "end_time": 11.961424947000069,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961425767000037,
+      "end_time": 11.9614322729999,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.96143313399989,
+      "end_time": 11.961439595000229,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961443845000304,
+      "end_time": 11.961450456999955,
+      "success": false,
+      "op": "read"
+    },
+    {
+      "submit_time": 11.961451347000093,
+      "end_time": 11.961457730999882,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.96145857700003,
+      "end_time": 11.961464944,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961465771999883,
+      "end_time": 11.961472053000307,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961473111000032,
+      "end_time": 11.961479638000128,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961480786000266,
+      "end_time": 11.96148726499996,
+      "success": false,
+      "op": "read"
+    },
+    {
+      "submit_time": 11.961488185000235,
+      "end_time": 11.96149464600012,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961495431999992,
+      "end_time": 11.961501858000247,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961502771000141,
+      "end_time": 11.961509093000132,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961509905000185,
+      "end_time": 11.961516447000122,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.96151725000027,
+      "end_time": 11.9615237779999,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961524581000049,
+      "end_time": 11.961530853000113,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961531741000272,
+      "end_time": 11.961560756999916,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961562333000074,
+      "end_time": 11.961574122000002,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961575581000034,
+      "end_time": 11.961586009000257,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961586823000289,
+      "end_time": 11.961594114000036,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961595546999888,
+      "end_time": 11.961602379999931,
+      "success": false,
+      "op": "read"
+    },
+    {
+      "submit_time": 11.961606410000059,
+      "end_time": 11.961613381999996,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961614173000271,
+      "end_time": 11.961620783999933,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961621552999986,
+      "end_time": 11.96162828300021,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961629033000008,
+      "end_time": 11.961635489999935,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961636303999967,
+      "end_time": 11.961642989000211,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961643803000243,
+      "end_time": 11.96165023200001,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961651092000011,
+      "end_time": 11.961657633999948,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961658419000287,
+      "end_time": 11.961665065000034,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961665948000245,
+      "end_time": 11.961675099999866,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961675921000278,
+      "end_time": 11.961682656999983,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.9616838930001,
+      "end_time": 11.96169092900027,
+      "success": false,
+      "op": "read"
+    },
+    {
+      "submit_time": 11.961691755000174,
+      "end_time": 11.961698265999985,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961699414000122,
+      "end_time": 11.961706269999922,
+      "success": false,
+      "op": "read"
+    },
+    {
+      "submit_time": 11.96170720400005,
+      "end_time": 11.961713931000304,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.96171505700022,
+      "end_time": 11.961805259999892,
+      "success": false,
+      "op": "read"
+    },
+    {
+      "submit_time": 11.961806387000252,
+      "end_time": 11.961814279999999,
+      "success": false,
+      "op": "write"
+    },
+    {
+      "submit_time": 11.961815994000062,
+      "end_time": 11.961824157000137,
+      "success": false,
+      "op": "read"
+    },
+    {
+      "submit_time": 11.961825469999894,
+      "end_time": 11.961832584000149,
+      "success": false,
+      "op": "read"
+    }
+  ]
+}

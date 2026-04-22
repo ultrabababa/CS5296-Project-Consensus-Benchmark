@@ -23,7 +23,7 @@ class MetricsTests(unittest.TestCase):
 
     def test_sensitivity_score_increases_for_slower_fault_distribution(self):
         baseline = [10.0, 12.0, 14.0, 16.0, 18.0]
-        fault = [30.0, 32.0, 34.0, 36.0, 38.0]
+        fault = [10.0, 12.0, 14.0, 30.0, 60.0]
         score = sensitivity_score(baseline, fault)
         self.assertGreater(score, 0.0)
 

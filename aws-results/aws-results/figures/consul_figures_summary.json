@@ -1,0 +1,13 @@
+{
+  "fig1_sensitivity": 1548.2889659132761,
+  "fig1_png": "/mnt/d/study/cityu/cs5296-cloud-computing/project/consensus-benchmark-lab/aws-results/results/figures/consul_fig1_ecdf_leader_kill.png",
+  "fig2_png": "/mnt/d/study/cityu/cs5296-cloud-computing/project/consensus-benchmark-lab/aws-results/results/figures/consul_fig2_radar.png",
+  "radar_scores": {
+    "leader_kill": 1548.2889659132761,
+    "delay_120ms": 67.5105917831454,
+    "loss_8pct": 8.93117442453888,
+    "partition": 530.2704293411748,
+    "majority_crash": 1782.7272347014718,
+    "majority_partition": 1715.2890591444302
+  }
+}

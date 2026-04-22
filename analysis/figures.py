@@ -20,6 +20,10 @@ from analysis.multi_scenario import load_sensitivity_by_scenario
 from analysis.stabl_metric import area_under_ecdf
 
 
+MULTI_RADAR_LEGEND_ANCHOR = (1.52, 1.20)
+MULTI_RADAR_LABEL_PAD = 14
+
+
 def radar_scenarios() -> list[str]:
     return [
         "leader_kill",
@@ -70,6 +74,18 @@ def compute_radar_rmax(scores: dict[str, dict[str, float]], scenarios: list[str]
     if max_v <= 0:
         return 1.0
     return math.ceil(max_v * 1.2 * 10.0) / 10.0
+
+
+def compute_log_radar_rmax(scores: dict[str, dict[str, float]], scenarios: list[str]) -> float:
+    max_log_v = 0.0
+    for system_scores in scores.values():
+        for s in scenarios:
+            raw = float(system_scores.get(s, 0.0))
+            log_v = math.log10(1.0 + max(0.0, raw))
+            max_log_v = max(max_log_v, log_v)
+    if max_log_v <= 0:
+        return 1.0
+    return math.ceil(max_log_v * 1.1 * 10.0) / 10.0
 
 
 def fig1_ecdf_with_sensitivity(baseline_dir: Path, altered_dir: Path, out_png: Path, out_csv: Path) -> float:
@@ -136,7 +152,8 @@ def fig2_radar(scores: dict[str, dict[str, float]], out_png: Path, out_csv: Path
         ax.plot(angles, vals, linewidth=2, label=system)
 
     ax.set_xticks(angles[:-1])
-    ax.set_xticklabels(scenarios)
+    ax.set_xticklabels(scenarios, fontsize=10)
+    ax.tick_params(axis="x", pad=MULTI_RADAR_LABEL_PAD)
     ax.set_ylim(0.0, rmax)
     ax.set_title("Sensitivity by Failure Scenario")
     ax.grid(True)
@@ -164,21 +181,46 @@ def fig2_radar_multi(scores: dict[str, dict[str, float]], out_png: Path, out_csv
     angles += angles[:1]
 
     fig, ax = plt.subplots(figsize=(8, 8), subplot_kw={"polar": True})
-    rmax = compute_radar_rmax(scores, scenarios)
-    for system in systems:
-        vals = [float(scores[system].get(s, 0.0)) for s in scenarios]
+    rmax = compute_log_radar_rmax(scores, scenarios)
+    
+    # 1. 模仿右图：使用不同的线型、加粗线条，去掉圆点 marker
+    linestyles = ['--', '-.', ':', '-']
+    for i, system in enumerate(systems):
+        vals = [math.log10(1.0 + max(0.0, float(scores[system].get(s, 0.0)))) for s in scenarios]
         vals += vals[:1]
-        ax.plot(angles, vals, linewidth=2, label=system, linestyle="--", marker="o")
+        ax.plot(angles, vals, linewidth=2.5, label=system, linestyle=linestyles[i % len(linestyles)])
 
     ax.set_xticks(angles[:-1])
-    ax.set_xticklabels(scenarios)
+    # 2. 增大外围标签字号，并设置 pad 推远距离，防止重叠
+    ax.set_xticklabels(scenarios, fontsize=12)
+    ax.tick_params(axis="x", pad=30) 
+
     ax.set_ylim(0.0, rmax)
-    ax.set_title("Sensitivity by Failure Scenario")
+    ticks = np.linspace(0.0, rmax, 5)
+    ax.set_yticks(ticks)
+    # 弱化内部网格的刻度数字，避免喧宾夺主
+    ax.set_yticklabels([f"{(10**t)-1:.0f}" for t in ticks], fontsize=9, color="gray")
+
+    # 3. 调整标题，增加 pad 使其上移
+    ax.set_title("Sensitivity by Failure Scenario (log scale)", pad=40, fontsize=15, fontweight="bold")
+    
+    # 弱化极坐标外圈的黑色粗线（可选，让它更像右图的清爽风格）
+    ax.spines['polar'].set_color('silver')
     ax.grid(True)
-    ax.legend(loc="upper right", bbox_to_anchor=(1.25, 1.15))
+
+    # 4. 调整图例：带边框，增大字号，位置调整到右上角
+    ax.legend(
+        loc="upper right", 
+        bbox_to_anchor=(1.35, 1.15), 
+        fontsize=12, 
+        frameon=True, 
+        borderpad=0.8
+    )
+    
     out_png.parent.mkdir(parents=True, exist_ok=True)
-    plt.tight_layout()
-    plt.savefig(out_png, dpi=200)
+    
+    # 5. 关键：使用 bbox_inches="tight" 确保外部图例和撑开的标签不会被裁切
+    plt.savefig(out_png, dpi=300, bbox_inches="tight")
     plt.close()
 
 

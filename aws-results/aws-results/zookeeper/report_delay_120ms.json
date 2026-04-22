@@ -1,0 +1,10 @@
+{
+  "baseline_mean_throughput_ops_per_sec": 175.77434725815695,
+  "fault_mean_throughput_ops_per_sec": 174.68504257192774,
+  "throughput_degradation_ratio": 0.006197176682609824,
+  "baseline_mean_p99_ms": 17.018105736527396,
+  "fault_mean_p99_ms": 21.159057560025737,
+  "baseline_mean_failure_rate": 0.0,
+  "fault_mean_failure_rate": 0.0,
+  "sensitivity_score": 8.240377621965397
+}

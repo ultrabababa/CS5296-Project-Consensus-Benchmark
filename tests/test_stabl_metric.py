@@ -12,12 +12,7 @@ class StablMetricTests(unittest.TestCase):
     def test_stabl_sensitivity_matches_absolute_area_difference(self):
         baseline = [1.0, 2.0, 3.0]
         altered = [2.0, 3.0, 4.0]
-        lower = min(min(baseline), min(altered), 0.0)
-        upper = max(max(baseline), max(altered))
-        expected = abs(
-            area_under_ecdf(baseline, lower_bound=lower, upper_bound=upper)
-            - area_under_ecdf(altered, lower_bound=lower, upper_bound=upper)
-        )
+        expected = abs(area_under_ecdf(baseline) - area_under_ecdf(altered))
         self.assertAlmostEqual(stabl_sensitivity_score(baseline, altered), expected)
 
     def test_stabl_sensitivity_infinite_when_altered_has_no_successful_latency(self):

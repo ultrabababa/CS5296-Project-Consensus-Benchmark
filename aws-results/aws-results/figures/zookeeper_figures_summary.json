@@ -1,0 +1,13 @@
+{
+  "fig1_sensitivity": 4.910801711313544,
+  "fig1_png": "/mnt/d/study/cityu/cs5296-cloud-computing/project/consensus-benchmark-lab/aws-results/results/figures/zookeeper_fig1_ecdf_leader_kill.png",
+  "fig2_png": "/mnt/d/study/cityu/cs5296-cloud-computing/project/consensus-benchmark-lab/aws-results/results/figures/zookeeper_fig2_radar.png",
+  "radar_scores": {
+    "leader_kill": 4.910801711313544,
+    "delay_120ms": 8.240377621965397,
+    "loss_8pct": 16.74046978304179,
+    "partition": 48.90196193190049,
+    "majority_crash": 2.324146846800101,
+    "majority_partition": 11086.64675797536
+  }
+}
